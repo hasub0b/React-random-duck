@@ -1,10 +1,10 @@
 import "./styles.css"
+import Duck from "./Duck.js"
 
 function App() {
     return (
     <div className="grid">
-    <button className="image">image</button>
-    <button className="newImage">NEW</button>
+    <Duck />
     </div>
   );
 }
