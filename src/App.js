@@ -1,5 +1,7 @@
+import "./styles.css"
+
 function App() {
-  return (
+    return (
     <div className="grid">
     <div className="image">image</div>
     </div>
