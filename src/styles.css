@@ -16,5 +16,20 @@
     margin-top: 2rem;
     justify-content: center;
     grid-template-columns: repeat(1, 6rem);
-    grid-template-rows: minmax(7rem, auto) repeat(2, 6rem);
+    grid-template-rows: minmax(7rem, auto) repeat(6, 6rem);
+  }
+
+  .grid > button {
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    height: 50%;
+    background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .grid > button:hover,
+  .grid > button:focus {
+    background-color: rgba(255, 255, 255, .9);
   }

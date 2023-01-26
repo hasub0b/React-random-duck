@@ -3,7 +3,8 @@ import "./styles.css"
 function App() {
     return (
     <div className="grid">
-    <div className="image">image</div>
+    <button className="image">image</button>
+    <button className="newImage">NEW</button>
     </div>
   );
 }
