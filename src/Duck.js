@@ -3,6 +3,7 @@ import React,{useState} from "react";
 function Duck(){
 
     const [img, setImg] = useState("https://random-d.uk/api/randomimg");
+
     const getDuck = () => {
    
         setTimeout(() => {
