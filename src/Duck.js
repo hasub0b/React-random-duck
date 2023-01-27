@@ -19,8 +19,8 @@ function Duck(){
 
     return(
         <div className="duck-main">
-            <img src={img} width="400px" alt="duck"/>
-            <button className="newImage" onClick={getDuck}>New</button>
+            <img src={img} width="400px" height="400px" alt="duck"/>
+            <button className="newImage" onClick={getDuck}>New Duck!</button>
         </div>
     )
 }
