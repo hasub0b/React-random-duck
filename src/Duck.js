@@ -32,9 +32,9 @@ function Duck(){
 
     return(
         <div className="duck-main">
+            <button className="newImage" onClick={getDuck}>New Duck!</button>
             <div>
-                {!done ? (<Loading loading={loading} />) : (<img src={img} width="400px" height="400px" alt="duck"/>)}
-                <button className="newImage" onClick={getDuck}>New Duck!</button>
+                {!done ? (<Loading loading={loading} />) : (<img src={img} width="500px" height="500px" className="duckImg" alt="duck"/>)}
             </div> 
         </div>
     )
