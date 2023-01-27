@@ -1,5 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
+import * as loading from './loadinganimation.json';
 
 const defaultOptions = {
   loop: true,
@@ -10,13 +11,22 @@ const defaultOptions = {
   }
 }
 
+const defaultOptions2 = {
+    loop: false,
+    autoplay: true,
+    animationData: loading.default,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  }
+
 const Loading = ({loading}) => {
   return (
     <div style={{marginTop: '10rem'}}>
       {!loading ? (
-        <Lottie options={defaultOptions} height={120} width={120} />
+        <Lottie options={defaultOptions} height={400} width={400} />
       ) : (
-        <Lottie options={defaultOptions2} height={120} width={120} />
+        <Lottie options={defaultOptions2} height={400} width={400} />
       )}
     </div>
   )
